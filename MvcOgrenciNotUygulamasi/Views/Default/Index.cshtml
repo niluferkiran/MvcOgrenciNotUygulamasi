@@ -1,8 +1,23 @@
-﻿
+﻿@using MvcOgrenciNotUygulamasi.Models.EntityFramework
+@model List<TBLDERSLER>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Burası projenin Content alanıdır.</h2>
-
+<table class="table table-bordered">
+    <tr>
+        <th>DERS ID</th>
+        <th>DERS ADI</th>
+    </tr>
+    <tbody>
+        @foreach(var drs in Model)
+                {
+                    <tr>
+                        <td>@drs.DERSID</td>
+                        <td>@drs.DERSAD</td>
+                    </tr>
+                }
+    </tbody>
+</table>

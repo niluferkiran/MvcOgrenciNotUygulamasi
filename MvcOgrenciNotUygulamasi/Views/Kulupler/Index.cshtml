@@ -1,0 +1,27 @@
+﻿@using MvcOgrenciNotUygulamasi.Models.EntityFramework
+@model List<TBLKULUPLER>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Kulupler</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>KULUP ID</th>
+        <th>KULUP ADI</th>
+        <th>KULUP KONTENJAN</th>
+    </tr>
+    <tbody>
+        @foreach (var klp in Model)
+        {
+            <tr>
+                <td>@klp.KULUPID</td>
+                <td>@klp.KULUPAD</td>
+                <td>@klp.KULUPKONTENJAN</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

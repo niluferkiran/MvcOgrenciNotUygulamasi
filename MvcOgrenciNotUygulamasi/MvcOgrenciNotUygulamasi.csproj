@@ -129,6 +129,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\KuluplerController.cs" />
+    <Compile Include="Controllers\NotlarController.cs" />
+    <Compile Include="Controllers\OgrenciController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -442,6 +445,7 @@
     <Content Include="Dosyalar1\sidebar\style3.css" />
     <Content Include="Dosyalar1\sidebar\style4.css" />
     <Content Include="Dosyalar1\sidebar\style5.css" />
+    <Content Include="Dosyalar1\StyleSheet1.css" />
     <Content Include="Dosyalar1\StyleSheet2.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -588,6 +592,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Kulupler\Index.cshtml" />
+    <Content Include="Views\Ogrenci\Index.cshtml" />
+    <Content Include="Views\Notlar\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

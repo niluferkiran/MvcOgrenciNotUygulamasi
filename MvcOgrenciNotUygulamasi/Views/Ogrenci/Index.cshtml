@@ -1,0 +1,32 @@
+﻿@using MvcOgrenciNotUygulamasi.Models.EntityFramework
+@model List<TBLOGRENCILER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Öğrenci Tablosu</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Adı</th>
+        <th>Soyadı</th>
+        <th>Cinsiyeti</th>
+        <th>Kulüp</th>
+        <th>Fotoğraf</th>
+    </tr>
+    @foreach(var ogr in Model)
+            {
+                <tr>
+                    <td>@ogr.OGRENCIID</td>
+                    <td>@ogr.OGRAD</td>
+                    <td>@ogr.OGRSOYAD</td>
+                    <td>@ogr.OGRCINSIYET</td>
+                    <td>@ogr.OGRKULUP</td>
+                    <td>@ogr.OGRFOTOGRAF</td>
+                </tr>
+            }
+</table>
+
