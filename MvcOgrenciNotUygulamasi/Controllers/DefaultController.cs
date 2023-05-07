@@ -16,5 +16,12 @@ namespace MvcOgrenciNotUygulamasi.Controllers
             var dersler = db.TBLDERSLER.ToList();
             return View(dersler);
         }
+        public ActionResult YeniDers(TBLDERSLER p)
+        {
+            db.TBLDERSLER.Add(p);
+            db.SaveChanges();
+            return View();
+        }
     }
+    
 }
