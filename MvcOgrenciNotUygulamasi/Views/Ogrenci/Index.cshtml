@@ -17,16 +17,17 @@
         <th>Kulüp</th>
         <th>Fotoğraf</th>
     </tr>
-    @foreach(var ogr in Model)
-            {
-                <tr>
-                    <td>@ogr.OGRENCIID</td>
-                    <td>@ogr.OGRAD</td>
-                    <td>@ogr.OGRSOYAD</td>
-                    <td>@ogr.OGRCINSIYET</td>
-                    <td>@ogr.OGRKULUP</td>
-                    <td>@ogr.OGRFOTOGRAF</td>
-                </tr>
-            }
+    @foreach (var ogr in Model)
+    {
+        <tr>
+            <td>@ogr.OGRENCIID</td>
+            <td>@ogr.OGRAD</td>
+            <td>@ogr.OGRSOYAD</td>
+            <td>@ogr.OGRCINSIYET</td>
+            <td>@ogr.OGRKULUP</td>
+            <td>@ogr.OGRFOTOGRAF</td>
+        </tr>
+    }
 </table>
 
+<a href="/Ogrenci/YeniOgrenci" class="btn btn-primary">Yeni Kulüp Ekle</a>

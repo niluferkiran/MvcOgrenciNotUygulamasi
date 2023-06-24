@@ -1,4 +1,5 @@
-﻿using MvcOgrenciNotUygulamasi.Models.EntityFramework;
+﻿using Microsoft.Ajax.Utilities;
+using MvcOgrenciNotUygulamasi.Models.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,18 @@ namespace MvcOgrenciNotUygulamasi.Controllers
         {
             var ogrenciler = db.TBLOGRENCILER.ToList();
             return View(ogrenciler);
+        }
+        [HttpGet]
+        public ActionResult YeniOgrenci()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniOgrenci(TBLOGRENCILER ogr)
+        {
+            db.TBLOGRENCILER.Add(ogr);
+            db.SaveChanges();
+            return View();
         }
     }
 }
